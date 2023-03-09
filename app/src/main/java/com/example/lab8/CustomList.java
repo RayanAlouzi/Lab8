@@ -73,6 +73,15 @@ public class CustomList extends ArrayAdapter<City> {
         }
     }
 
+    /**
+     * deletes a city
+     * @param city
+     *      city to be deleted
+     */
+    public void deleteCity(City city){
+
+
+    }
 
 
 
