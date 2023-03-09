@@ -37,7 +37,7 @@ public class CustomListTest {
     }
 
     /**
-     * get the size of the list
+     * make city list
      * check if list has city
      * add city
      * check if list has city
@@ -53,6 +53,23 @@ public class CustomListTest {
 
     }
 
+    /**
+     * make cityList
+     * add city
+     * check if list has city
+     * remove city
+     * check if list has city
+     one
+     */
+    @Test
+    public void deleteCityTest(){
+        list = MockCityList();
+        City newCity = new City("Estevan","SK");
+        list.addCity(newCity);
+        assertEquals(list.hasCity(newCity),true);
+        list.deleteCity(newCity);
+        assertEquals(list.hasCity(newCity),false);
+    }
 
 
 }
